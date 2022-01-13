@@ -2,23 +2,23 @@ import { TitleText } from "@/components/common/widget/title-text";
 
 function Footer() {
   return (
-    <footer className="bg-black py-[60px]">
-      <div className="container">
-        <h2 className="text-white text-[1.875rem]">
+    <footer className="bg-black py-[60px] md:py-[52px]">
+      <div className="container md:flex justify-between">
+        <h2 className="text-white text-[1.875rem] md:text-[1.5rem]">
           <TitleText />
         </h2>
-        <p className="text-white-darken text-2xl leading-[1.5] mt-11">
+        <p className="text-white-darken text-2xl md:text-xl leading-[1.5] mt-11 md:mt-0 md:max-w-[18em]">
           The Modern Art Gallery is free to all visitors and open seven days a
           week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
         </p>
-        <div className="mt-11 flex space-x-6">
+        <div className="mt-11 md:mt-0 flex space-x-6">
           <a href="https://www.facebook.com" target="_blank" className="group">
             <svg
               width="20"
               height="20"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
-              className="w-7 h-7"
+              className="w-7 h-7 md:w-5 md:h-5"
               preserveAspectRatio
             >
               <path
@@ -33,7 +33,7 @@ function Footer() {
               height="20"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
-              className="w-7 h-7"
+              className="w-7 h-7 md:w-5 md:h-5"
               preserveAspectRatio
             >
               <path
@@ -48,7 +48,7 @@ function Footer() {
               height="20"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
-              className="w-7 h-7"
+              className="w-7 h-7 md:w-5 md:h-5"
               preserveAspectRatio
             >
               <path
