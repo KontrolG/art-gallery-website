@@ -21,6 +21,10 @@ h6 {
     @apply mx-auto max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl w-11/12;
   }
 
+  .not-container {
+    @apply mx-0 max-w-full w-full;
+  }
+
   .overlapping-children {
     @apply grid;
   }

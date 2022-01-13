@@ -9,6 +9,7 @@ module.exports = {
       serif: ["Big Shoulders Display", "sans-serif"]
     },
     extend: {
+      maxWidth: { "2xl": "43rem" },
       backgroundColor: {
         white: "#FBFAF8",
         black: "#151515",
