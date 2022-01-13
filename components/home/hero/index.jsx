@@ -1,5 +1,6 @@
 import { CallToActionLink } from "@/components/common/widget/call-to-action-link";
-import { DESCRIPTION, TITLE } from "@/constants/data";
+import { TitleText } from "@/components/common/widget/title-text";
+import { DESCRIPTION } from "@/constants/data";
 import { HOME_MOBILE_IMAGES_PATH, LOCATION_PATH } from "@/constants/paths";
 import React from "react";
 
@@ -17,7 +18,9 @@ function Hero({ className }) {
       </div>
       <div className="mt-10">
         <section className="container">
-          <h1 className="text-[4.75rem]">{TITLE}</h1>
+          <h1 className="text-[4.75rem]">
+            <TitleText />
+          </h1>
           <p className="text-2xl leading-[1.5] mt-11">{DESCRIPTION}</p>
           <CallToActionLink href={LOCATION_PATH} className="mt-12 text-3xl">
             Our location

@@ -1,10 +1,12 @@
-import { TITLE } from "@/constants/data";
+import { TitleText } from "@/components/common/widget/title-text";
 
 function Footer() {
   return (
     <footer className="bg-black py-[60px]">
       <div className="container">
-        <h2 className="text-white text-[1.875rem]">{TITLE}</h2>
+        <h2 className="text-white text-[1.875rem]">
+          <TitleText />
+        </h2>
         <p className="text-white-darken text-2xl leading-[1.5] mt-11">
           The Modern Art Gallery is free to all visitors and open seven days a
           week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
