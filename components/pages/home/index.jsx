@@ -8,8 +8,8 @@ function HomePageLayout() {
     <PageLayout showHeader={false}>
       <main>
         <Hero />
-        <YourDay className="pt-40 pb-8" />
-        <ComeAndBeInspired className="pb-40" />
+        <YourDay className="pt-40 md:pt-[8.375rem] pb-8 md:pb-3" />
+        <ComeAndBeInspired className="pb-40 md:pb-[120px]" />
       </main>
     </PageLayout>
   );
