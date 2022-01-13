@@ -4,10 +4,10 @@ function Footer() {
   return (
     <footer className="bg-black py-[60px] md:py-[52px]">
       <div className="container md:flex justify-between">
-        <h2 className="text-white text-[1.875rem] md:text-[1.5rem]">
+        <h2 className="text-white text-[1.875rem] md:text-[1.5rem] lg:text-[2rem]">
           <TitleText />
         </h2>
-        <p className="text-white-darken text-2xl md:text-xl leading-[1.5] mt-11 md:mt-0 md:max-w-[18em]">
+        <p className="text-white-darken text-2xl md:text-xl lg:text-[1.625rem] leading-[1.5] mt-11 md:mt-0 md:max-w-[18em] xl:max-w-[26em]">
           The Modern Art Gallery is free to all visitors and open seven days a
           week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
         </p>
