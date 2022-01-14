@@ -8,7 +8,7 @@ function HomePageLayout() {
     <PageLayout showHeader={false}>
       <main>
         <Hero />
-        <YourDay className="pt-40 md:pt-[8.375rem] pb-8 md:pb-3" />
+        <YourDay className="pt-40 md:pt-[8.375rem] lg:pt-[11.25rem] pb-8 md:pb-3 lg:pb-7" />
         <ComeAndBeInspired className="pb-40 md:pb-[120px]" />
       </main>
     </PageLayout>
