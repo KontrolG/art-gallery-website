@@ -2,7 +2,12 @@ import { Header } from "../header";
 import Maybe from "@/components/common/helpers/maybe";
 import { Footer } from "../footer";
 
-function PageLayout({ children, showHeader = true, showFooter = true }) {
+function PageLayout({
+  children,
+  showHeader = true,
+  showFooter = true,
+  footerVariant = "default"
+}) {
   return (
     <>
       <Maybe it={showHeader}>
@@ -10,7 +15,7 @@ function PageLayout({ children, showHeader = true, showFooter = true }) {
       </Maybe>
       {children}
       <Maybe it={showFooter}>
-        <Footer />
+        <Footer variant={footerVariant} />
       </Maybe>
     </>
   );
