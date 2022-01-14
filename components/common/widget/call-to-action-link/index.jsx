@@ -2,13 +2,35 @@ import { Link } from "@/components/common/routing/link";
 import { SHARED_IMAGES_PATH } from "@/constants/paths";
 import classes from "classnames";
 
-function CallToActionLink({ className, href, children, linkProps, variant }) {
+function CallToActionLink({
+  className,
+  href,
+  children,
+  linkProps,
+  variant,
+  direction = "right"
+}) {
   return (
     <Link
       className={classes("inline-flex group text-white", className)}
       {...linkProps}
       href={href}
     >
+      <div
+        className={classes(
+          "p-[1em] flex-centered transition-colors",
+          variant === "alternative"
+            ? "bg-black group-hover:bg-emphasis"
+            : "bg-emphasis group-hover:bg-black",
+          direction === "left" ? "block" : "hidden"
+        )}
+      >
+        <img
+          className="h-[1em] w-auto"
+          src={SHARED_IMAGES_PATH + "/icon-arrow-left.svg"}
+          alt="Arrow left"
+        />
+      </div>
       <div
         className={classes(
           " py-[1em] px-[1.5em] uppercase font-serif flex-centered transition-colors",
@@ -24,7 +46,8 @@ function CallToActionLink({ className, href, children, linkProps, variant }) {
           "p-[1em] flex-centered transition-colors",
           variant === "alternative"
             ? "bg-black group-hover:bg-emphasis"
-            : "bg-emphasis group-hover:bg-black"
+            : "bg-emphasis group-hover:bg-black",
+          direction !== "left" ? "block" : "hidden"
         )}
       >
         <img
