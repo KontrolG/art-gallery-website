@@ -7,7 +7,7 @@ function Header() {
       <CallToActionLink
         href={HOME_PATH}
         direction="left"
-        className="text-sm absolute"
+        className="text-sm md:text-xl absolute"
       >
         Back to home
       </CallToActionLink>

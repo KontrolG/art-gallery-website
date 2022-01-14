@@ -20,7 +20,7 @@ function Footer({ variant }) {
         </h2>
         <p
           className={classes(
-            "text-2xl md:text-xl lg:text-[1.625rem] leading-[1.5] mt-11 md:mt-0 md:max-w-[18em] xl:max-w-[26em]",
+            "text-2xl md:text-xl lg:text-lg leading-[1.5] mt-11 md:mt-0 md:max-w-[18em] xl:max-w-[26em]",
             variant === "alternative" ? "text-[#653515]" : "text-white-darken"
           )}
         >
